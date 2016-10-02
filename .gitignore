@@ -21,3 +21,6 @@
 /config/database.yml
 
 /public/assets/
+*.swo
+*.swp
+.DS_Store

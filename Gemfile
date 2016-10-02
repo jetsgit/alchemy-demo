@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2.0'
+gem 'rails', '~> 4.2.7'
 
 gem 'alchemy_cms',              github: 'AlchemyCMS/alchemy_cms',            branch: 'master'
 gem 'alchemy-devise',           github: 'AlchemyCMS/alchemy-devise',         branch: 'master'
@@ -18,7 +18,7 @@ gem 'dotenv-rails'
 
 group :development do
   gem 'capistrano', '~> 2.15'
-  gem 'pry-byebug'
+  # gem 'pry-byebug'
   gem 'quiet_assets'
   gem 'web-console', '~> 2.0'
 end
