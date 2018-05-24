@@ -1,43 +1,12 @@
-# == This file defines the page_layouts for new pages.
+# == This file defines the page layouts for new pages.
 #
-# For further informations please see http://guides.alchemy-cms.com/create_page_layouts.html
+# For further information please see http://guides.alchemy-cms.com/stable/page_layouts.html
 
 - name: intro
   unique: true
-  cells: [slider]
-  elements: [image_slide, video_slide, image_teaser, intro_text]
-  autogenerate: [intro_text]
+  elements: [article]
+  autogenerate: [article]
 
-- name: standard
-  elements: [text_block, content_block]
-  autogenerate: [text_block, content_block]
-
-- name: content_page
-  cells: [slider]
-  elements: [video_slide, image_slide, content_block, call_to_action]
-  autogenerate: [video_slide, image_slide, content_block, content_block, content_block, call_to_action]
-
-- name: blog
-  insert_elements_at: top
-  elements: [blog_post]
-  autogenerate: [blog_post]
-
-- name: category
-  elements: [category_intro, gallery]
-  autogenerate: [category_intro, gallery]
-
-- name: microsite
-  cells: [slider]
-  elements: [video_slide, image_slide, portrait_image]
-  autogenerate: [portrait_image, image_slide]
-
-- name: external
-  redirects_to_external: true
-
-# global pages
-
-- name: footer
-  unique: true
-  layoutpage: true
-  elements: [footer_note, footer_links, social_button]
-  autogenerate: [footer_note, footer_links]
+- name: house
+  elements: [article, house_section, house_block]
+  autogenerate: [article]
