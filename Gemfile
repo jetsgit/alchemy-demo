@@ -18,7 +18,7 @@ gem 'dotenv-rails'
 
 group :development do
   gem 'capistrano', '~> 2.15'
-  # gem 'pry-byebug'
+  gem 'pry-byebug'
   gem 'quiet_assets'
   gem 'web-console', '~> 2.0'
 end
