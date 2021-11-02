@@ -1,7 +1,0 @@
-<% cache(element) do %>
-<ul class="inline-list right"<%= element_preview_code(element) %>>
-<% element.contents.each do |content| %>
-  <li><%= render_essence(content) %></li>
-<% end %>
-</ul>
-<% end %>
